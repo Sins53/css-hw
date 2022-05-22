@@ -1,0 +1,18 @@
+.logo {
+  h1 {
+    color: black;
+    margin: 0;
+  }
+  &-E {
+    color: $primary;
+    border: 1px solid $secondary;
+    padding: 0 1rem;
+    margin-right: 0.5rem;
+  }
+  &-W {
+    color: $primary;
+    border: 1px solid white;
+    padding: 0 1rem;
+    margin-right: 0.5rem;
+  }
+}

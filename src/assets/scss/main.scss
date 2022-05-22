@@ -1,0 +1,28 @@
+// @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+@import "./abstracts/variables";
+@import "./frameworks/rfs";
+
+@import "./abstracts/mixins";
+@import "./abstracts/functions";
+
+@import "../icon.css";
+@import "./base/base";
+@import "./base/typography";
+@import "./base/utilities";
+
+@import "./layouts/footer";
+@import "./layouts/header";
+
+@import "./frameworks/display";
+@import "./frameworks/customcss";
+
+@import "./components/logo";
+@import "./components/body/vendors";
+@import "./components/body/subscribe";
+@import "./components/body/offer";
+@import "./components/body/featured";
+@import "./components/body/categories";
+@import "./components/body/product";
+@import "./components/body/navbar";

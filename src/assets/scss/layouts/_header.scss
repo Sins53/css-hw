@@ -1,0 +1,122 @@
+header {
+  border-bottom: 1px solid $secondary;
+  padding-bottom: 1rem;
+  div {
+    // .header-nav{
+    //   display: grid;
+    //   grid-template-columns: repeat(12, 1fr);
+    //   &-start{
+    //     grid-column: span 6;
+
+    //     a{
+    //       color: black;
+    //       text-decoration: none;
+    //     }
+    //     span{
+    //       padding: 0 0.5rem;
+    //     }
+    //   }
+    //   &-end{
+    //     grid-column: span 6;
+    //     text-align: right !important;
+    //     i{
+    //       padding-right: 1rem;
+    //     }
+    //   }
+    // }
+    @media (min-width: 992px) {
+      .header-nav {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        &-start {
+          grid-column: span 6;
+          a {
+            color: black;
+            text-decoration: none;
+          }
+          span {
+            padding: 0 0.5rem;
+          }
+        }
+        &-end {
+          grid-column: span 6;
+          text-align: right !important;
+          i {
+            padding-right: 1rem;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 992px) {
+      .header-nav {
+        &-start {
+          display: none;
+        }
+        &-end {
+          text-align: center !important;
+          i {
+            padding-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .topbar {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    &-logo {
+      grid-column: span 3;
+      // h1{
+      //   color: black;
+      //   margin: 0;
+      // }
+      // &-E{
+      //   color: $primary;
+      //   border: 1px solid $secondary;
+      //   padding:0 1rem;
+      //   margin-right: 1rem;
+      // }
+    }
+    &-search {
+      grid-column: span 6;
+      margin-top: 0.5rem;
+      &-text {
+        padding: 0.5rem;
+        width: 80%;
+      }
+      &-btn {
+        padding: 0.5rem;
+        border: 1px solid $secondary;
+        color: $primary;
+      }
+    }
+    &-end {
+      grid-column: span 3;
+      text-align: right !important;
+      button {
+        padding: 0.5rem 1.5rem;
+        background-color: white;
+        border-color: $secondary;
+        margin-left: 1rem;
+      }
+      i {
+        font-size: 1.5rem;
+        color: $primary;
+      }
+    }
+    @media (max-width: 992px) {
+      .topbar-logo {
+        display: none;
+      }
+      .topbar-search {
+        grid-column: span 6;
+      }
+      .topbar-end {
+        grid-column: span 6;
+        text-align: right !important;
+      }
+    }
+  }
+}

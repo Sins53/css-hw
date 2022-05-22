@@ -1,0 +1,44 @@
+.categories {
+  margin: 5rem 0;
+  &-card {
+    border: 1px solid $secondary;
+    padding: 0 1.5rem;
+    div {
+      overflow: hidden;
+      position: relative;
+    }
+  }
+  h4 {
+    font-weight: 400;
+    text-align: right;
+  }
+  img {
+    width: 100%;
+    &:hover {
+      overflow: hidden;
+      transform: scale(1.2);
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    grid-gap: 2rem;
+  }
+}
+@media (max-width: 992px) {
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(2, 6fr);
+    grid-gap: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(1, 12fr);
+    grid-gap: 2rem;
+  }
+}

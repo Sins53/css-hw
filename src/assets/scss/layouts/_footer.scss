@@ -1,0 +1,89 @@
+footer {
+  // margin-top: 2rem;
+  background-color: $secondary;
+  padding-top: 4rem;
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    &-logo {
+      i {
+        color: $primary;
+        margin-right: 1rem;
+      }
+    }
+    &-info {
+      .newsletter {
+        form {
+          input {
+            background-color: white;
+            padding: 1rem;
+            width: 89%;
+            margin-bottom: 1rem;
+          }
+          button {
+            width: 100%;
+            background-color: $primary;
+            padding: 1rem;
+          }
+        }
+      }
+    }
+    @media (min-width: 992px) {
+      .footer-logo {
+        grid-column: span 4;
+      }
+      .footer-info {
+        margin-left: 1rem;
+        grid-column: span 8;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+      }
+      .link-1 {
+        grid-column: span 4;
+      }
+      .link-2 {
+        grid-column: span 4;
+      }
+      .newsletter {
+        grid-column: span 4;
+      }
+    }
+    @media (max-width: 992px) {
+      .footer-logo {
+        grid-column: span 12;
+      }
+      .footer-info {
+        grid-column: span 12;
+      }
+    }
+  }
+
+  .end-credit {
+    margin-top: 2rem;
+    border-top: 2px solid white;
+    padding: 2rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    p {
+      margin: 0;
+    }
+    &-text {
+      grid-column: span 7;
+    }
+    &-img {
+      grid-column: span 5;
+      text-align: right;
+    }
+    @media (max-width: 992px) {
+      .end-credit-text {
+        grid-column: span 12;
+        text-align: center;
+      }
+      .end-credit-img {
+        grid-column: span 12;
+        margin-top: 1rem;
+        text-align: center;
+      }
+    }
+  }
+}

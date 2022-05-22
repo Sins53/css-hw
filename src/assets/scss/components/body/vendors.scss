@@ -1,0 +1,13 @@
+.vendors {
+  margin-bottom: 6rem;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1.5rem;
+  overflow: hidden;
+
+  img {
+    grid-column: span auto;
+    border: 1px solid green;
+  }
+}

@@ -1,0 +1,109 @@
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 2rem;
+  padding: 0 4rem;
+  height: 30rem;
+  &-categories {
+    grid-column: span 3;
+    button {
+      color: black;
+      padding: 1rem;
+      background-color: $primary;
+      width: 100%;
+      border: none;
+      text-align: left;
+      font-size: 1.2rem;
+      display: inline-flex;
+      justify-content: space-between;
+    }
+    ul {
+      margin-top: 0rem;
+      padding: 0;
+      li {
+        padding: 0.5rem 1.5rem;
+        list-style: none;
+        border: 1px solid $secondary;
+      }
+    }
+  }
+  &-nav {
+    grid-column: span 9;
+    &-md-links {
+      display: none;
+    }
+    &-links {
+      width: 99%;
+      // background-color: green;
+      display: inline-flex;
+      justify-content: space-between;
+      padding: 1rem 0.5rem;
+      a {
+        text-decoration: none;
+        color: black;
+        margin-right: 1rem;
+      }
+    }
+    &-carousel {
+      .img-xl {
+        width: 100%;
+        height: 26.5rem;
+        // background-color: red;
+        position: relative;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+        .text-front {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+
+          color: white;
+          h3 {
+            font-weight: 400;
+          }
+          h1 {
+            font-size: 2.5rem;
+          }
+          a {
+            padding: 0.5rem 1rem;
+            border: 1px solid white;
+            background-color: white;
+            color: black;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .navbar-categories {
+    display: none;
+  }
+  .navbar-nav {
+    grid-column: span 12;
+    &-md-links {
+      display: block;
+      width: 99%;
+      display: inline-flex;
+      justify-content: space-between;
+      padding: 1rem 0.5rem;
+      .end {
+        padding: 0;
+        span {
+          display: inline-flex;
+          font-size: 2rem;
+          color: grey;
+          border: 1px solid grey;
+        }
+      }
+    }
+    &-links {
+      display: none;
+    }
+  }
+}
